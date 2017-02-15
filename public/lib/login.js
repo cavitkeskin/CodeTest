@@ -9,7 +9,8 @@ define(function(require){
 					var url = '/api/user/signin',
 						data = $('form.login').serializeObject()
 
-					$.post(url, data, function(){
+					$.post(url, data, function(data){
+						console.log('User Token', data)
 						document.location = '/book';
 					}).fail(function(xhr){
 						alert('Error', xhr.responseText, 'error');

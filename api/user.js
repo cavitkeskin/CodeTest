@@ -17,7 +17,7 @@ router.get('/', User.require('user', 'select'), (req, res, next) => {
 router.post('/signin', function(req, res, next){
 	User.loginByCredentials(req.body.username, req.body.password).then(function(result){
 		res.cookie('session', result.uid)
-		res.json(true)
+		res.json(result.uid)
 	}).catch(function(err){
 		User.logout(req.cookies.session).then(function(result){
 			res.cookie('session', '')
