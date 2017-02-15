@@ -1,0 +1,8 @@
+{
+	"database": {
+		"database": "ct_library",
+		"user": "ct_library",
+		"password": "ct_library",
+		"host": "localhost"
+	}
+}
