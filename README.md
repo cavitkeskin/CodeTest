@@ -79,6 +79,6 @@ return http status 403 if user not have permission
 	it deletes book which id is given.
 	
 	
-## Summary
+## To Do
 
-APi read token from cookies. Token should be given on every request for 3rd party application such as mobile apps. It is not supported right now.
+- APi read token from cookies. Token should be given on every request for 3rd party application such as mobile apps. It is not supported right now.
